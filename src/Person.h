@@ -15,8 +15,22 @@ private:
 
 public:
     Person(int,int,std::string);
+
     Person();
 
+    std::string getName();
+
+    int getId();
+
+    int getAge();
+
+    void setName(std::string name);
+
+    void setId(int id);
+
+    void setAge(int age);
+
+    std::string toString();
 };
 
 
