@@ -2,4 +2,4 @@
 // Created by Owner on 24/10/2020.
 //
 
-#include "IReadFrom.h"
+#include "InJSON.h"
