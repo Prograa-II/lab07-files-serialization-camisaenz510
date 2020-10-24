@@ -4,7 +4,7 @@
 
 #include "InBinary.h"
 
-void saving (Person*person){
+void InBinary::saving (Person*person){
 
     ofstream archive;
     try{archive.open("BinaryArchive.dat", ios::out|ios::binary);}
@@ -16,7 +16,7 @@ void saving (Person*person){
     archive.close();
 }
 
-void saving(std::vector<Persona>){
+void InBinary::saving(std::vector<Persona>){
 
     ofstream archive;
     try{archive.open("BinaryArchive.dat", ios::out|ios::binary);}
@@ -30,7 +30,7 @@ void saving(std::vector<Persona>){
     archive.close();
 }
 
-std::vector<Person> reading(){
+std::vector<Person> InBinary:: reading(){
     ifstream archive;
     try{archive.open("BinaryArchive.dat", ios::in|ios::binary);}
     catch(std::ifstream::failure a){
