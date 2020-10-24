@@ -47,3 +47,7 @@ std::string Person::toString(){
     output<<"Age:  "<<getAge()<<endl;
     return output.str();
 }
+
+void Person::addPerson(Person *person){
+    personList.push_back(person);
+}

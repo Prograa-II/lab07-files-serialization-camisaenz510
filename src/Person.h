@@ -5,6 +5,7 @@
 #ifndef MY_PROJECT_NAME_PERSON_H
 #define MY_PROJECT_NAME_PERSON_H
 #include <sstream>
+#include <vector>
 
 class Person {
 
@@ -12,6 +13,7 @@ private:
     int id;
     int age;
     std::string name;
+    std::vector<Person> PersonList;
 
 public:
     Person(int,int,std::string);
@@ -31,6 +33,10 @@ public:
     void setAge(int age);
 
     std::string toString();
+
+    //vector method
+
+    void addPerson(Person *person);
 };
 
 
